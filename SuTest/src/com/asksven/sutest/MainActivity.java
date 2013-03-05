@@ -60,46 +60,48 @@ public class MainActivity extends Activity
         {
             public void onClick(View v)
             {
-        		if (execute("ls /"))
+            	for (int i=0; i < 10; i++)
+        		if (execute("dumpsys alarm"))
         		{
         			Toast.makeText(MainActivity.this, "Success.", Toast.LENGTH_SHORT).show();			
         		}
         		else
         		{
-        			Toast.makeText(MainActivity.this, "Failed.", Toast.LENGTH_SHORT).show();			
+        			Toast.makeText(MainActivity.this, "Failed, aboring", Toast.LENGTH_SHORT).show();
+        			break;
         		}
             }
         });
-        final Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-        		if (execute_alt("ls -l"))
-        		{
-        			Toast.makeText(MainActivity.this, "Success.", Toast.LENGTH_SHORT).show();			
-        		}
-        		else
-        		{
-        			Toast.makeText(MainActivity.this, "Failed.", Toast.LENGTH_SHORT).show();			
-        		}
-            }
-        });
-        final Button button4 = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-        		if (execute_alt("dumpsys meminfo"))
-        		{
-        			Toast.makeText(MainActivity.this, "Success.", Toast.LENGTH_SHORT).show();			
-        		}
-        		else
-        		{
-        			Toast.makeText(MainActivity.this, "Failed.", Toast.LENGTH_SHORT).show();			
-        		}
-            }
-        });
+//        final Button button3 = (Button) findViewById(R.id.button3);
+//        button3.setOnClickListener(new View.OnClickListener()
+//        {
+//            public void onClick(View v)
+//            {
+//        		if (execute_alt("ls -l"))
+//        		{
+//        			Toast.makeText(MainActivity.this, "Success.", Toast.LENGTH_SHORT).show();			
+//        		}
+//        		else
+//        		{
+//        			Toast.makeText(MainActivity.this, "Failed.", Toast.LENGTH_SHORT).show();			
+//        		}
+//            }
+//        });
+//        final Button button4 = (Button) findViewById(R.id.button4);
+//        button4.setOnClickListener(new View.OnClickListener()
+//        {
+//            public void onClick(View v)
+//            {
+//        		if (execute_alt("dumpsys meminfo"))
+//        		{
+//        			Toast.makeText(MainActivity.this, "Success.", Toast.LENGTH_SHORT).show();			
+//        		}
+//        		else
+//        		{
+//        			Toast.makeText(MainActivity.this, "Failed.", Toast.LENGTH_SHORT).show();			
+//        		}
+//            }
+//        });
 
     }
 

@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:text="Command 1" />
+        android:text="1 x dumpsys" />
 
     <Button
         android:id="@+id/button2"
@@ -28,8 +28,8 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:text="Command 2" />
-
+        android:text="10 x dumpsys" />
+<!--
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -55,5 +55,5 @@
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
         android:text="Command 4" />
-
+-->
 </RelativeLayout>
